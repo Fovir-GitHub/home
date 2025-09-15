@@ -3,3 +3,13 @@ languageCode: en-us
 title: Fovir's Home
 
 theme: hextra
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: favicon.svg
+      link: /
+      width: 40
+      height: 40
