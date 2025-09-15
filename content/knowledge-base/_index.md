@@ -1,5 +1,6 @@
 ---
 title: Knowledge Base
+toc: false
 cascade:
   type: docs
 ---
@@ -10,6 +11,4 @@ Welcome to **Fovir's Knowledge Base**! This site documents and shares my learnin
 
 ## How to Use?
 
-For high-efficient query, this site provides a sidebar with different categories, where you can easily find what you need. You can also refer to the `Catalog` section below to find your need.
-
-<Catalog />
+For high-efficient query, this site provides a sidebar with different categories, where you can easily find what you need.
