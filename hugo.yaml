@@ -1,5 +1,5 @@
-baseURL: https://example.org/
+baseURL: https://kb.fovir.fyi/
 languageCode: en-us
-title: My New Hugo Site
+title: Fovir's Knowledge Base
 
 theme: hextra
