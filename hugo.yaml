@@ -4,6 +4,24 @@ title: Fovir's Home
 
 theme: hextra
 
+menu:
+  main:
+    - name: Knowledge Base
+      pageRef: /knowledge-base
+      weight: 1
+    - name: Blog
+      pageRef: /blog
+      weight: 2
+    - name: GitHub
+      weight: 3
+      url: "https://github.com/Fovir-GitHub"
+      params:
+        icon: github
+    - name: Search
+      weight: 4
+      params:
+        type: search
+
 params:
   navbar:
     displayTitle: true
