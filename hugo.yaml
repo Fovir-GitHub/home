@@ -4,6 +4,8 @@ title: Fovir's Home
 
 theme: hextra
 
+enableGitInfo: true
+
 menu:
   main:
     - name: Knowledge Base
@@ -34,3 +36,5 @@ params:
   theme:
     default: dark
     displayToggle: true
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
