@@ -31,3 +31,6 @@ params:
       link: /
       width: 40
       height: 40
+  theme:
+    default: dark
+    displayToggle: true
