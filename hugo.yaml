@@ -9,6 +9,9 @@ enableGitInfo: true
 markup:
   highlight:
     noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
 
 menu:
   main:
@@ -42,3 +45,9 @@ params:
     displayToggle: true
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
+
+  blog:
+    list:
+      displayTags: true
+  toc:
+    displayTags: true
