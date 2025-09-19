@@ -6,6 +6,10 @@ theme: hextra
 
 enableGitInfo: true
 
+markup:
+  highlight:
+    noClasses: false
+
 menu:
   main:
     - name: Knowledge Base
