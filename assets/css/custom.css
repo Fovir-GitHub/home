@@ -2,3 +2,11 @@
 .round-image {
   border-radius: 24%;
 }
+
+/* Use flex layout. */
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
