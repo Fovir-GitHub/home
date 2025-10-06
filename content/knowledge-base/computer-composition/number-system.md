@@ -2,6 +2,7 @@
 title: Number System
 description: Introduction of the number system.
 date: 2025-10-06
+weight: 1
 ---
 
 ## Number Representation

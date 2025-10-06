@@ -2,6 +2,7 @@
 title: Integer Formats
 date: 2025-10-06
 description: Formats of integers in microcomputers.
+weight: 2
 ---
 
 ## Sign-Magnitude Representation (Original Binary Data)
