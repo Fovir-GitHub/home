@@ -16,7 +16,7 @@ markup:
       passthrough:
         delimiters:
           block: [['\[', '\]'], ["$$", "$$"]]
-          inline: [['\(', '\)']]
+          inline: [['\(', '\)'], ["$", "$"]]
         enable: true
 
 menu:
