@@ -12,6 +12,12 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ["$$", "$$"]]
+          inline: [['\(', '\)']]
+        enable: true
 
 menu:
   main:
