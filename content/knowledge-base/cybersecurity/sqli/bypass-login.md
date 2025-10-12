@@ -48,3 +48,7 @@ For the previous one, the backend will not check the password.
 For the later one, the condition `1=1` is always `true`, so the query is always `true`.
 
 Both statements can bypass the login authentication.
+
+## Reference
+
+- [PortSwigger](https://portswigger.net/web-security/sql-injection/)
