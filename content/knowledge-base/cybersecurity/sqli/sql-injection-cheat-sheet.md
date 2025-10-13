@@ -2,6 +2,7 @@
 title: Cheat Sheet
 date: 2025-10-12
 description: SQL injection cheat sheet from https://portswigger.net/web-security/sql-injection/cheat-sheet
+weight: 0
 ---
 
 This SQL injection cheat sheet contains examples of useful syntax that you can use to perform a variety of tasks that often arise when performing SQL injection attacks.
