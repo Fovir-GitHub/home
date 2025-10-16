@@ -3,10 +3,7 @@
   border-radius: 24%;
 }
 
-/* Use flex layout. */
-html,
-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+/* Home Body */
+.home-body {
+  height: calc(100vh - var(--navbar-height) - 116px);
 }

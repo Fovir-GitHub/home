@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="hx:flex hextra-max-page-width">
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
     {{ partial "sidebar.html" (dict "context" .) }}
     {{ partial "toc.html" . }}
     <article
@@ -20,4 +20,3 @@
     </article>
   </div>
 {{ end }}
-
