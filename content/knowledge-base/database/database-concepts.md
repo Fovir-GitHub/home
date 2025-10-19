@@ -2,6 +2,7 @@
 title: Database Concepts
 description: Introduction of database concepts.
 date: 2025-10-08
+weight: 2
 ---
 
 ## Database System Concepts
