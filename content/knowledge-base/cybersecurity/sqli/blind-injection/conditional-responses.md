@@ -5,7 +5,7 @@ description: Notes of blind SQL injection with conditional responses.
 weight: 1
 ---
 
-## Conditional Responses
+## Principles
 
 A type of blind SQL injection is triggering conditional responses.
 
