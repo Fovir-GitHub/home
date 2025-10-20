@@ -1,8 +1,8 @@
 ---
-title: Blind SQL Injection
+title: Conditional Responses
 date: 2025-10-13
-description: Notes of blind SQL injection.
-weight: 3
+description: Notes of blind SQL injection with conditional responses.
+weight: 1
 ---
 
 ## Conditional Responses
