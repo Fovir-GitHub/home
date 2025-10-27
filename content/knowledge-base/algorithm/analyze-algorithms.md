@@ -31,7 +31,7 @@ Major space components are
    - Count total steps or lines executed.
 2. Asymptotic Categorization:
    - Describe algorithm performance in general terms.
-   - Ignores maachine-dependent details.
+   - Ignores machine-dependent details.
 
 Example:
 
@@ -73,7 +73,7 @@ In conclusion, the RAM model is useful for analysis but oversimplifies reality.
 
 **Asymptotic analysis** evaluates an algorithm’s efficiency as input size grows, focusing on order of growth rather than exact times.
 
-It ignores maachine-dependent constants and focuses on growth trends to compare algorithms fairly.
+It ignores machine-dependent constants and focuses on growth trends to compare algorithms fairly.
 
 ### Three Cases of Analysis
 
