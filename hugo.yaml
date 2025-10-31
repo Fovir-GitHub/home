@@ -33,8 +33,13 @@ menu:
       url: "https://github.com/Fovir-GitHub"
       params:
         icon: github
-    - name: Search
+    - name: RSS
+      pageRef: /index.xml
       weight: 4
+      params:
+        icon: rss
+    - name: Search
+      weight: 5
       params:
         type: search
 
