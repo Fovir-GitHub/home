@@ -366,7 +366,7 @@ For the frontend, I choose Etar Calendar. It is also easy to configure Etar Cale
 > References <br/>
 > [ChatGPT](https://chatgpt.com/) <br/>
 > [Radicale Document](https://radicale.org/v3.html) <br/>
-> [Fireyeah](https://blog.0pt.icu/posts/server/traefik-simple-guide/) <br/>
+> [Fireyeah](https://blog.0pt.icu/posts/server-traefik-simple-guide/) <br/>
 > [Traefik Document](https://doc.traefik.io/traefik/) <br/>
 > [docker-radicale](https://github.com/tomsquest/docker-radicale) <br/>
 > [Radicale Discussions](https://github.com/Kozea/Radicale/discussions/1368) <br/>
