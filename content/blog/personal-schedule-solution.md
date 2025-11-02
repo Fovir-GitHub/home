@@ -2,6 +2,8 @@
 date: 2025-02-07
 title: Personal Schedule Solution
 description: This post shares how do I use Radicale as the backend and use Thunderbird and DAVx5 + Etar Calendar as the frontend to build my personal scheduler.
+tags:
+  - Web Application
 ---
 
 ## Background
