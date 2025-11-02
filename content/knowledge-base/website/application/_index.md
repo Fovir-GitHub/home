@@ -1,6 +1,0 @@
----
-title: Applications
----
-
-<Catalog />
-
