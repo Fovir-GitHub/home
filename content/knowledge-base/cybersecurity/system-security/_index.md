@@ -1,5 +1,0 @@
----
-title: System Security
----
-
-<Catalog />
