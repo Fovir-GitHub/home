@@ -37,7 +37,7 @@ PasswordAuthentication yes
 
 # If you want to log in as root, then set this to `yes`.
 PermitRootLogin yes
-````
+```
 
 Then run the following command to restart the SSH service.
 
@@ -68,7 +68,7 @@ PasswordAuthentication yes
 
 # Disable log in as root via password.
 PermitRootLogin prohibit-password
-````
+```
 
 Then restart SSH with the following command:
 
@@ -100,4 +100,3 @@ This configuration enables client to simply type `ssh VPS` to connect to the ser
 [Remmina](https://remmina.org/) is a free and open source remote desktop client. It is also available for SSH connection.
 
 In the main window of `Remmina`, add a new configuration and select `SSH - Secure Shell` in the `Protocol` field. Then fill the information required below. And the `Authentication type` can be set to `SSH identity file`, which enables users to authenticate via SSH private key by selecting the key file in the `SSH identity file` field.
-

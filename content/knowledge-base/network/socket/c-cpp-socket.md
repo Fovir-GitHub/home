@@ -60,7 +60,7 @@ struct in_addr
 };
 ```
 
-> *in* stands for *internet*
+> _in_ stands for _internet_
 
 To assign a value to `sockaddr_in.sin_port`, we can use `uint16_t htons(uint16_t hostshort)` to convert an integer into the `uint16_t` instead of assigning the value directly. One way to use is like:
 
@@ -81,15 +81,15 @@ Plus, the server should listen to all address `0.0.0.0` sometimes, and we can as
 
 This header file offers the following useful functions:
 
-* `int socket(int domain, int type, int protocol)`
-* `int setsockopt(int fd, int level, int optname, const void * optval, socklen_t optlen)`
-* `int bind(int fd, const sockaddr * addr, socklen_t len)`
-* `int listen(int fd, int n)`
-* `int accept(int fd, sockaddr * addr, socklen_t * addr_len)`
-* `ssize_t recv(int fd, void * buf, size_t n, int flags)`
-* `ssize_t send(int fd, const void * buf, size_t n, int flags)`
+- `int socket(int domain, int type, int protocol)`
+- `int setsockopt(int fd, int level, int optname, const void * optval, socklen_t optlen)`
+- `int bind(int fd, const sockaddr * addr, socklen_t len)`
+- `int listen(int fd, int n)`
+- `int accept(int fd, sockaddr * addr, socklen_t * addr_len)`
+- `ssize_t recv(int fd, void * buf, size_t n, int flags)`
+- `ssize_t send(int fd, const void * buf, size_t n, int flags)`
 
-The `sockaddr` is a structure in `<bits/socket.h>` header file, and also the short name of *socket address*. The definition is
+The `sockaddr` is a structure in `<bits/socket.h>` header file, and also the short name of _socket address_. The definition is
 
 ```c
 struct sockaddr
@@ -99,7 +99,7 @@ struct sockaddr
 };
 ```
 
-The *sa* prefix stands for *sockaddr*.
+The _sa_ prefix stands for _sockaddr_.
 
 Now let's take a look at each functions above.
 
@@ -113,7 +113,7 @@ This function accepts three arguments, which are
 | `type`     | The type of sockets        | `SOCK_STREAM`, `SOCK_RAW`                                |
 | `protocol` | The protocol of the socket | `0` (Automatically select), `IPPROTO_TCP`, `IPPROTO_UDP` |
 
-> The *AF* stands for *Address Family`.
+> The _AF_ stands for `Address Family`.
 
 And it will return a descriptor of the socket.
 
@@ -123,11 +123,11 @@ The code below is a common way to create a `TCP` socket server.
 int server_fd = socket(AF_INET, SOCK_STREAM, 0);
 ```
 
-Where *fd* stands for *file descriptor*.
+Where _fd_ stands for _file descriptor_.
 
 After creating a file descriptor of the server, it is optional to do some settings, which needs to call `setsockopt()` function.
 
-####  `int setsockopt(int fd, int level, int optname, const void * optval, socklen_t optlen)`
+#### `int setsockopt(int fd, int level, int optname, const void * optval, socklen_t optlen)`
 
 The first argument `fd` is the file descriptor, which is `server_fd` in this example.
 
@@ -146,7 +146,7 @@ If the function failed, it will return `-1`. Otherwise, it will return `0`.
 
 After setting the socket, we can bind the socket to specific address by using `bind()` function.
 
-####  `int bind(int fd, const sockaddr * addr, socklen_t len)`
+#### `int bind(int fd, const sockaddr * addr, socklen_t len)`
 
 The first argument determines which server file descriptor to bind.
 
@@ -164,7 +164,7 @@ If the `bind()` failed, it will return `-1`. Otherwise, it will return `0` inste
 
 By the flowchart above, the next stage is to listen to the client connections, which needs `listen()` function.
 
-####  `int listen(int fd, int n)`
+#### `int listen(int fd, int n)`
 
 This function is easier than previous functions since it has only two arguments.
 
@@ -180,7 +180,7 @@ listen(server_fd, 5);
 
 Same as the functions before, it will return `-1` if it failed and return `0` if it succeeded.
 
-####  `int accept(int fd, sockaddr * addr, socklen_t * addr_len)`
+#### `int accept(int fd, sockaddr * addr, socklen_t * addr_len)`
 
 This function is used to get the client's address and the file descriptor of the client.
 
@@ -204,7 +204,7 @@ int         client_fd =
 
 After gaining the file descriptor of client, it means we can treat it as regular files. In this example, we only show how to receive and send data.
 
-####  `ssize_t recv(int fd, void * buf, size_t n, int flags)`
+#### `ssize_t recv(int fd, void * buf, size_t n, int flags)`
 
 This function is used to receive data from `fd`. If we want to receive the data from the client, we can set it to `client_fd` which has gotten before.
 
@@ -226,7 +226,7 @@ ssize_t receive_bytes = recv(client_fd, &buffer[0], BUFFER_SIZE, 0);
 buffer.resize(receive_bytes);
 ```
 
-####  `ssize_t send(int fd, const void * buf, size_t n, int flags)`
+#### `ssize_t send(int fd, const void * buf, size_t n, int flags)`
 
 This function is used to send data to the `fd`. If we want to send data to the client, we can set it to `client_fd`.
 
