@@ -1,9 +1,7 @@
 ---
 title: Log in VPS with SSH
 date: 2025-07-15
-icon: solar:server-bold
 description: Introduce how to log in VPS with SSH identity file.
-order: 0
 ---
 
 ## Background
