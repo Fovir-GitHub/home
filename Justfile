@@ -3,3 +3,6 @@ dev:
 
 format:
   prettier -w "content/**/*.md"
+
+new path:
+  hugo new content {{path}}
